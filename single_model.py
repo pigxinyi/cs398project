@@ -11,6 +11,9 @@ import torch.optim as optim
 from torch.autograd import Variable
 import torch.distributed as dist
 import torchvision
+#xinyi so cute
+
+
 
 from helperFunctions import getUCF101
 from helperFunctions import loadFrame
@@ -153,7 +156,7 @@ for epoch in range(0,num_of_epochs):
         prediction = output.data.max(1)[1]
         accuracy = ( float( prediction.eq(y.data).sum() ) /float(batch_size))*100.0
         test_accu.append(accuracy)
-        accuracy_test = np.mean(test_accu)
+    accuracy_test = np.mean(test_accu)
     print('Testing',accuracy_test,time.time()-t1)
 
 torch.save(model,'single_frame.model')

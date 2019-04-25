@@ -28,7 +28,7 @@ NUM_CLASSES = 101
 batch_size = 100
 lr = 0.0001
 num_of_epochs = 10
-#
+
 #####################################################################################
 data_directory = '/projects/training/bawc/AR/'
 class_list, train, test = getUCF101(base_directory = data_directory)
@@ -80,7 +80,7 @@ optimizer = optim.Adam(params,lr=lr)
 criterion = nn.CrossEntropyLoss()
 
 pool_threads = Pool(8,maxtasksperchild=200)
-
+###xinyi balabal
 
 
 for epoch in range(0,num_of_epochs):

@@ -198,7 +198,7 @@ for i in range(len(test[0])):
 #############################################################################3
     filename = test[0][index]
     filename = filename.replace('.avi','.hdf5')
-    filename = filename.replace('UCF-101','UCF-101-hdf5')
+    filename = filename.replace('UCF-101','UCF-101-hdf5-2')
 
     h = h5py.File(filename,'r')
     nFrames = len(h['video'])
@@ -231,7 +231,7 @@ for i in range(len(test[0])):
 
         prediction[loop_i[j]:loop_i[j+1]] = output.cpu().numpy()
 
-    filename = filename.replace(data_directory+'UCF-101-hdf5/',prediction_directory)
+    filename = filename.replace(data_directory+'UCF-101-hdf5-2/',prediction_directory)
     if(not os.path.isfile(filename)):
         with h5py.File(filename,'w') as h:
             h.create_dataset('predictions',data=prediction)

@@ -170,7 +170,7 @@ model = torch.load('single_frame.model')
 model.cuda()
 
 ##### save predictions directory
-prediction_directory = 'UCF-101-predictions//single_frame/'
+prediction_directory = 'UCF-101-predictions/single_frame/'
 if not os.path.exists(prediction_directory):
     os.makedirs(prediction_directory)
 for label in class_list:

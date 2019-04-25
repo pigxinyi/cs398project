@@ -10,4 +10,4 @@ cd ~/scratch/cs398/cs398project/
 . /opt/modules/default/init/bash
 module load bwpy/2.0.1
 module load cudatoolkit
-aprun -n 1 -N 1 single_model.py
+aprun -n 1 -N 1 single_test.py

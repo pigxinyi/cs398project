@@ -121,7 +121,7 @@ for epoch in range(0,num_of_epochs):
             print(i,accuracy)
         train_accu.append(accuracy)
     accuracy_epoch = np.mean(train_accu)
-    print('Training'，epoch, accuracy_epoch,time.time()-start_time)
+    print('Training',epoch, accuracy_epoch,time.time()-start_time)
     torch.save(model,'Temp_single_frame.model')
 
     ##### TEST

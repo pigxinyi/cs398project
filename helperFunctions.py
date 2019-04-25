@@ -52,7 +52,7 @@ def loadFrame(args):
     try:
         ### load file from HDF5
         filename = filename.replace('.avi','.hdf5')
-        filename = filename.replace('UCF-101','UCF-101-hdf5')
+        filename = filename.replace('UCF-101','UCF-101-hdf5-2')
         h = h5py.File(filename,'r')
         nFrames = len(h['video']) - 1
         frame_index = np.random.randint(nFrames)
@@ -114,7 +114,7 @@ def loadSequence(args):
     try:
         ### load file from HDF5
         filename = filename.replace('.avi','.hdf5')
-        filename = filename.replace('UCF-101','UCF-101-hdf5')
+        filename = filename.replace('UCF-101','UCF-101-hdf5-2')
         h = h5py.File(filename,'r')
         nFrames = len(h['video']) - 1
         frame_index = np.random.randint(nFrames - num_of_frames)

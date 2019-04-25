@@ -11,7 +11,7 @@ import torch.optim as optim
 from torch.autograd import Variable
 import torch.distributed as dist
 import torchvision
-#xinyi so cute
+
 
 
 

@@ -11,13 +11,14 @@ import torch.optim as optim
 from torch.autograd import Variable
 import torch.distributed as dist
 import torchvision
+#xinyi so cute
 
 from helperFunctions import getUCF101
 from helperFunctions import loadFrame
 
 import h5py
 import cv2
-#xinyi is shalian
+
 from multiprocessing import Pool
 
 IMAGE_SIZE = 224

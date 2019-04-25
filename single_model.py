@@ -27,7 +27,7 @@ lr = 0.0001
 num_of_epochs = 10
 
 #####################################################################################
-data_directory = '/projects/training/bawc/AR'
+data_directory = '/projects/training/bawc/AR/'
 class_list, train, test = getUCF101(base_directory = data_directory)
 #####################################################################################
 

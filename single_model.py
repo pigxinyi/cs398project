@@ -17,7 +17,7 @@ from helperFunctions import loadFrame
 
 import h5py
 import cv2
-
+#xinyi is shalian
 from multiprocessing import Pool
 
 IMAGE_SIZE = 224

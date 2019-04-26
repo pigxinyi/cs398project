@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=16:xk
+#PBS -N test
+#PBS -l walltime=01:00:00
+#PBS -e $PBS_JOBNAME.$PBS_JOBID.err
+#PBS -o $PBS_JOBNAME.$PBS_JOBID.out
+#PBS -M xinyi7@illinois.edu
+#PBS -m bea
+cd ~/scratch/cs398/project/
+. /opt/modules/default/init/bash
+module load bwpy/2.0.1
+module load cudatoolkit
+aprun -n 1 -N 1 train_3d.py

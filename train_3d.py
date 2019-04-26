@@ -39,7 +39,7 @@ class_list, train, test = getUCF101(base_directory = data_directory)
 model =  resnet_3d.resnet50(sample_size=IMAGE_SIZE, sample_duration=16)
 
 #The state dictionary for the pretrained model is loaded into pretrained.
-pretrained = torch.load('/u/training/tra337/CS398/FINALPROJECT/resnet-50-kinetics.pth')
+pretrained = torch.load('/u/training/tra347/CS398/project/resnet-50-kinetics.pth')
 
 #The names of the of layers are used to place the weights into the model we defined.
 keys = [k for k,v in pretrained['state_dict'].items()]

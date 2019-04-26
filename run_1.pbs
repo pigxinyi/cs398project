@@ -6,7 +6,7 @@
 #PBS -o $PBS_JOBNAME.$PBS_JOBID.out
 #PBS -M xinyi7@illinois.edu
 #PBS -m bea
-cd ~/scratch/cs398/cs398project/
+cd ~/scratch/cs398/project/
 . /opt/modules/default/init/bash
 module load bwpy/2.0.1
 module load cudatoolkit
